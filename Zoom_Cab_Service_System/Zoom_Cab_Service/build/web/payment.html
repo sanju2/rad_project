@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>payment</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/zoomCab.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">ZOOM CAB SERVICE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+       
+        </nav>
+    
+    <!-- Page Content -->
+    <div class="container">
+         <div class="row my-4">
+        <div class="col-lg-7">
+          <img class="img-fluid rounded" src="img/payment.jpg" alt="img">
+           
+        </div>
+          
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-5">
+             <h1>Payment</h1>
+                <form action="payment.jsp" method="POST">
+                    <table border="0">
+                        <tbody>
+                            
+                            <tr>
+                                <td>Payment Date</td>
+                                <td><input type="text" name="pdate" value="" size="30" /></td>
+                            </tr>
+                            <tr>
+                                <td>No of Date for Rent</td>
+                                <td><input type="text" name="nodate" value="" size="30" /></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Payment Method</td>
+                                <td><input type="radio" name="method" value="bank" />  Bank <input type="radio" name="method" value="on hand" />  On hand </td>
+                            
+                            </tr>
+                            <tr>
+                                <td>Amount </td>
+                                <td><input type="text" name="amount" value="" size="30" /></td>
+                            </tr>
+                            <tr>
+                                <td>Customer name</td>
+                                <td><input type="text" name="cusname" value="" size="30" /></td></tr>
+                        <br>
+                        <tr>
+                            <td>Car Type</td>
+                            <td>  <select name="cartype">
+                                    <option>ALTO-HYBRID</option>
+                                    <option>MARUTI800</option>
+                                    <option>HONDA CIVIC HYBRID</option>
+                                    <option>HONDA CIVIC</option>
+                                    <option>MARUTI-SUZUKI ALTO</option>
+                                    <option>MARUTI-SUZUKI-ALTO-GLX</option>
+                                    <option>MICRO PENDA</option>
+                                    <option>MICRO</option>
+                                </select>  </td>
+                            
+                        </tr>
+                        
+                            <tr>
+                                <td></td>
+                                <td style="text-align: right"> <button type="submit" class="btn btn-success" name="btnPayment">Pay</button>
+                                   
+                                    <button class="btn btn-danger" type="reset">Reset</button>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+
+                </form>
+             <br>
+             <h3>if you payment bank,this is our account no</h3><br>
+                 8456875211
+      </div>
+    
+          
+        </div>
+        </div>
+    
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Zoom Cabs 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
